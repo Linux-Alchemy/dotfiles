@@ -27,3 +27,6 @@ export PATH="$HOME/.local/share/gem/ruby/3.4.0/bin:$PATH"
 # PS1="\W \[\e]0;\w\a\]$PS1"
 #
 eval "$(starship init bash)"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

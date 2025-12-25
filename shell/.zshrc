@@ -51,3 +51,20 @@ bindkey "^[[F" end-of-line
 # Enable Ctrl+Left/Right Arrow for jumping words
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+
+# 7 Aliases
+#
+alias py="python"
+#
+# An alias + function to chek for venv and activate.
+invoke() {
+  if [ -d ".venv" ]; then
+    source .venv/bin/activate
+    echo "The environment has been summoned..."
+  else
+    echo "There is no power here. No .venv folder either."
+  fi
+}
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
