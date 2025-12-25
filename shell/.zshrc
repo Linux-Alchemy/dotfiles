@@ -52,7 +52,7 @@ bindkey "^[[F" end-of-line
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-# 7 Aliases
+# 7. Aliases
 #
 alias py="python"
 #
