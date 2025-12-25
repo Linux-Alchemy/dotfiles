@@ -1,0 +1,96 @@
+# ~/.config/starship.toml
+
+# We manage the line break ourselves in the format string.
+add_newline = false
+command_timeout = 200
+
+# The new, streamlined two-line prompt format.
+# Line 1: Decoration, directory, and git status.
+# Line 2: Decoration and the command character.
+
+format = """\
+[┌──\\[](white)\
+[$directory](bold cyan)\
+[\\]](white)\
+[$git_branch](italic cyan)\
+[$git_status](cyan)\
+[$python](bold purple)\
+\n[└─](white)\
+[$character](bold red)\
+"""
+
+# --- Module Configurations ---
+
+# Directory display settings 
+[directory]
+truncation_length = 2
+truncation_symbol = "…/"
+style = "bold cyan"
+repo_root_style = "bold cyan"
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style)"
+format = "[$path]($style)[$read_only]($read_only_style)"
+
+# Git branch display settings (from your original file).
+[git_branch]
+format = " [$branch]($style)" # Added leading space for separation
+style = "italic cyan"
+
+# Git status display settings (from your original file).
+[git_status]
+format     = '[$all_status]($style)'
+style      = "cyan"
+ahead      = "⇡${count} "
+diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+behind     = "⇣${count} "
+conflicted = " "
+up_to_date = " "
+untracked  = "? "
+modified   = " "
+stashed    = "≡ "
+staged     = " S "
+renamed    = "➜ "
+deleted    = "✗ "
+
+# Python settings
+[python]
+disabled = false
+style = "bold purple"
+format = '[$virtualenv]($style)'
+detect_extensions = ["py"]
+detect_files = ["/python-version", "Pipfile", "__init__.py", "pyproject.toml", "requirements.txt"]
+
+
+# The prompt character, configured to be a red '$'.
+[character]
+success_symbol = "[❯](#D35F5F)"
+error_symbol = "[✗](#D35F5F)"
+vimcmd_symbol = "[N](bold green)"
+
+# --- Disable Unused Modules ---
+# This ensures no other distracting information pops up.
+[aws]
+disabled = true
+[battery]
+disabled = true
+[cmd_duration]
+disabled = true
+[conda]
+disabled = true
+[docker_context]
+disabled = true
+[git_commit]
+disabled = true
+[git_state]
+disabled = true
+[hostname]
+disabled = true
+[memory_usage]
+disabled = true
+[package]
+disabled = true
+[sudo]
+disabled = true
+[time]
+disabled = true
+[username]
+disabled = true
