@@ -14,14 +14,13 @@ format = """\
 [\\]](white)\
 [$git_branch](italic cyan)\
 [$git_status](cyan)\
-[$python](bold purple)\
 \n[└─](white)\
 [$character](bold red)\
 """
 
 # --- Module Configurations ---
 
-# Directory display settings 
+# Directory display settings (from your original file).
 [directory]
 truncation_length = 2
 truncation_symbol = "…/"
@@ -51,15 +50,6 @@ staged     = " S "
 renamed    = "➜ "
 deleted    = "✗ "
 
-# Python settings
-[python]
-disabled = false
-style = "bold purple"
-format = '[$virtualenv]($style)'
-detect_extensions = ["py"]
-detect_files = ["/python-version", "Pipfile", "__init__.py", "pyproject.toml", "requirements.txt"]
-
-
 # The prompt character, configured to be a red '$'.
 [character]
 success_symbol = "[❯](#D35F5F)"
@@ -87,6 +77,8 @@ disabled = true
 [memory_usage]
 disabled = true
 [package]
+disabled = true
+[python]
 disabled = true
 [sudo]
 disabled = true
