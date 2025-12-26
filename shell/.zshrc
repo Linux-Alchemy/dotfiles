@@ -56,7 +56,7 @@ bindkey "^[[1;5D" backward-word
 #
 alias py="python"
 #
-# An alias + function to chek for venv and activate.
+# An alias + function to check for venv and activate.
 invoke() {
   if [ -d ".venv" ]; then
     source .venv/bin/activate
