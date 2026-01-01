@@ -53,9 +53,9 @@ bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
 # 7. Aliases
-#
+
 alias py="python"
-#
+alias pv="python3 -m venv .venv"
 # An alias + function to check for venv and activate.
 invoke() {
   if [ -d ".venv" ]; then

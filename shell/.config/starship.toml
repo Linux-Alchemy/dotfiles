@@ -55,7 +55,7 @@ deleted    = "✗ "
 [python]
 disabled = false
 style = "bold purple"
-format = '[$virtualenv]($style)'
+format = ' [$virtualenv]($style)'
 detect_extensions = ["py"]
 detect_files = ["/python-version", "Pipfile", "__init__.py", "pyproject.toml", "requirements.txt"]
 
