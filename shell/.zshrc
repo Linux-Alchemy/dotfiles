@@ -57,7 +57,7 @@ bindkey "^[[1;5D" backward-word
 alias la='eza -lah --icons --group-directories-first'
 alias tree='eza --tree --icons --group-directories-first'
 alias py="python"
-alias pv="python3 -m venv .venv"
+alias pvenv="python3 -m venv .venv"
 # An alias + function to check for venv and activate.
 invoke() {
   if [ -d ".venv" ]; then
