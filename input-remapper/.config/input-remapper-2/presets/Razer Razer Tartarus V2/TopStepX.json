@@ -1,0 +1,93 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 31,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_B",
+        "name": "1_buy-market",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 32,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_S",
+        "name": "2_sell-market",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 17,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_LEFTSHIFT + KEY_B",
+        "name": "3_join-bid",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 18,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_LEFTSHIFT + KEY_S",
+        "name": "4_join-ask",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 2,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_F",
+        "name": "5_flatten",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 57,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_E",
+        "name": "6_break-even",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 4,
+                "origin_hash": "89c79a52c20a75483a82f67d8594ac5d"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "KEY_LEFTCTRL + KEY_LEFTALT + KEY_LEFTSHIFT + KEY_C",
+        "name": "7_cancel",
+        "mapping_type": "key_macro"
+    }
+]

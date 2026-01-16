@@ -40,4 +40,4 @@ command = /usr/bin/zsh
 shell-integration = zsh
 #window-secure-input = false
 
-
+theme = Matte Black
