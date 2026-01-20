@@ -51,6 +51,10 @@ bindkey "^[[F" end-of-line
 # Enable Ctrl+Left/Right Arrow for jumping words
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
+# Tmux keybind fixes
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
+
 
 # 7. Aliases
 
