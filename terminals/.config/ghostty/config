@@ -29,7 +29,7 @@ keybind = super+control+shift+alt+arrow_left=resize_split:left,100
 keybind = super+control+shift+alt+arrow_right=resize_split:right,100
 
 # Slowdown mouse scrolling
-mouse-scroll-multiplier = 10.0
+mouse-scroll-multiplier = 5.0
 
 # Shell Configuration
 # Override the system default for ghostty
