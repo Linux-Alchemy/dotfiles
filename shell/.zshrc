@@ -1,10 +1,8 @@
 # ==============================================
 # THE OMARCHY ZSH CONFIG
-# "Don't Panic."
 # ==============================================
 
 # 1. History Configuration
-# Zsh doesn't save history by default. We must tell it to.
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
@@ -18,7 +16,7 @@ autoload -Uz compinit
 compinit
 
 # 3. Import Omarchy Aliases
-# We source your existing bash aliases because Zsh is polite and understands them.
+# source existing bash aliases because Zsh is polite and understands them.
 if [ -f "$HOME/.local/share/omarchy/default/bash/aliases" ]; then
     source "$HOME/.local/share/omarchy/default/bash/aliases"
 fi
@@ -44,7 +42,7 @@ fi
 
 
 # 6. Keybinding Fixes
-# Arch/Zsh sometimes confuse the Delete/Home/End keys. This fixes them.
+# Arch/Zsh sometimes confuse the Delete/Home/End keys.
 bindkey "^[[3~" delete-char
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
@@ -60,9 +58,19 @@ bindkey "^[[4~" end-of-line
 
 alias la='eza -lah --icons --group-directories-first'
 alias tree='eza --tree --icons --group-directories-first'
+
 alias py="python"
-alias pvenv="python3 -m venv .venv"
-# An alias + function to check for venv and activate.
+
+# create the python env
+pyinit() {
+  python3 -m venv .venv
+  touch .gitignore
+  grep -qxF ".venv" .gitignore || echo ".venv/" >> .gitignore
+  .venv/bin/python -m pip install -U pip
+  .venv/bin/python -m pip install ipython pytest ruff
+}
+
+# function to check for venv and activate.
 invoke() {
   if [ -d ".venv" ]; then
     source .venv/bin/activate
@@ -70,6 +78,12 @@ invoke() {
   else
     echo "There is no power here. No .venv folder either."
   fi
+}
+
+# activate the tmux testing grounds 
+repl() {
+  invoke
+  python -m IPython
 }
 
 # Generated for envman. Do not edit.
