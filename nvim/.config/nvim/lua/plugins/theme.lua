@@ -1,0 +1,1 @@
+/home/reaper/.config/omarchy/current/theme/neovim.lua
