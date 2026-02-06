@@ -1,1 +1,1 @@
-/home/reaper/.config/omarchy/current/theme/neovim.lua
+/home/doggo/.config/omarchy/current/theme/neovim.lua
